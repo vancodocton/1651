@@ -13,7 +13,7 @@ namespace csReview
 
 			Console.WriteLine("n is a number in range from 1 to 100");
 			// Guessing n 7 time
-			for (int i = 0; i <= 7; i++)
+			for (int i = 1; i <= 7; i++)
 			{
 				Console.Write($"Guessing {i} time, n = ");
 				
