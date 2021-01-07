@@ -8,11 +8,14 @@ namespace csReview
 {
 	class Student
 	{
-		public int Age { get; private set; }
-		public float Gpa { get; private set; }
-		public string Name { get; private set; }
+		private int age;
+		private double gpa;
+		private string name;
+		public int Age { get => age; private set => age = value; }
+		public double Gpa { get => gpa; private set => gpa = value; }
+		public string Name { get => name; private set => name = value; }
 
-		public Student(int age, float gpa, string name)
+		public Student(string name, int age, double gpa)
 		{
 			Age = age;
 			Gpa = gpa;
@@ -20,13 +23,9 @@ namespace csReview
 		}
 		public void DisplayInformation()
 		{
-			Console.WriteLine($"Student name: \t{Name}");
-			Console.WriteLine($"Student age: \t{Age}");
-			Console.WriteLine($"Student GPA: \t{Gpa}");
-		}
-		public override string ToString()
-		{
-			return base.ToString();
+			Console.WriteLine($"Student name: \t{name}");
+			Console.WriteLine($"Student age: \t{age}");
+			Console.WriteLine($"Student GPA: \t{gpa}");
 		}
 	}
 }
