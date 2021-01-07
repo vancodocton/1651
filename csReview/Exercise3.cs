@@ -16,7 +16,7 @@ namespace csReview
 			for (int i = 1; i <= 7; i++)
 			{
 				Console.Write($"Guessing {i} time, n = ");
-				
+
 				// check guessing result
 				int n = int.Parse(Console.ReadLine());
 				if (n == Num)
@@ -26,7 +26,7 @@ namespace csReview
 				}
 				else
 				{
-					if ( n < Num)
+					if (n < Num)
 						Console.WriteLine("Opps, You're wrong! Guessed number is smaller than n");
 					else
 						Console.WriteLine("Opps, You're wrong! Guessed number is bigger than n");
@@ -38,7 +38,5 @@ namespace csReview
 			Console.WriteLine($"n = {Num}");
 			return;
 		}
-
-
 	}
 }
