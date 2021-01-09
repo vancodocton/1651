@@ -13,8 +13,10 @@ namespace L2ClassMethod
 			Student student = new Student();
 
 			student.Input();
-			student.DisplayInformation();
 
+			//student.DisplayInformation();
+
+			Console.WriteLine(student);
 			Console.ReadKey(true);
 		}
 	}

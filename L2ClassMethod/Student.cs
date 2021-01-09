@@ -31,5 +31,9 @@ namespace L2ClassMethod
 			Console.Write("Please input GPA: ");
 			gpa = double.Parse(Console.ReadLine());
 		}
+		public override string ToString()
+		{
+			return base.ToString() + $"GPA: \t{gpa}\n";
+		}
 	}
 }

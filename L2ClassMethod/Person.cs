@@ -25,7 +25,7 @@ namespace L2ClassMethod
 		public void DisplayPerson()
 		{
 			Console.WriteLine($"Name:\t{name}");
-			Console.WriteLine($"");
+			Console.WriteLine($"Age: \t{age}");
 		}
 		public virtual void Input()
 		{
@@ -37,7 +37,7 @@ namespace L2ClassMethod
 
 		public override string ToString()
 		{
-			return $"Name:\t{name}\nAge: \t{age}";
+			return $"Name:\t{name}\nAge: \t{age}\n";
 		}
 	}
 }
