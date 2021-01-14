@@ -10,13 +10,19 @@ namespace L2ClassMethod
 	{
 		static void Main()
 		{
-			Student student = new Student();
+			int a = 10;
+			int b = -20;
 
-			student.Input();
+			int c = -4;
+			int d = -6;
 
-			//student.DisplayInformation();
+			var fraction1 = new Fraction(a, b);
+			var fraction2 = new Fraction(c, d);
 
-			Console.WriteLine(student);
+			Console.WriteLine(fraction1.ToString());
+			Console.WriteLine(fraction2);
+
+			Console.WriteLine(MathFranction.Divide(fraction1, fraction2).ToDecimal());
 			Console.ReadKey(true);
 		}
 	}
