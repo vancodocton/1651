@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace L2ClassMethod
 {
-	class Student : Person
+	public class Student : Person
 	{
-		private double gpa;
-		public double Gpa { get => gpa; private set => gpa = value; }
+		protected double gpa;
+		public double Gpa { get => gpa; }
 
-		public Student(string name1, int age1, double gpa1)
+		public Student(string name, int age, double gpa)
 		{
-			Age = age1;
-			gpa = gpa1;
-			Name = name1;
+			this.age = age;
+			this.name = name;
+			this.gpa = gpa;
 		}
 		public Student()
 		{
@@ -33,7 +29,7 @@ namespace L2ClassMethod
 		}
 		public override string ToString()
 		{
-			return base.ToString() + $"GPA: \t{gpa}\n";
+			return base.ToString() + $", GPA: {gpa}";
 		}
 	}
 }

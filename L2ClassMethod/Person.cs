@@ -1,26 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace L2ClassMethod
 {
-	class Person
+	public class Person
 	{
-		private int age;
-		private string name;
+		protected int age;
+		protected string name;
 
-		public int Age { get => age;  set => age = value; }
-		public string Name { get => name;  set => name = value; }
+		public int Age { get => age; }
+		public string Name { get => name; }
 
 		public Person()
 		{
 		}
-		public Person(int age1, string name1)
+		public Person(int age, string name)
 		{
-			age = age1;
-			name = name1;
+			this.age = age;
+			this.name = name;
 		}
 		public void DisplayPerson()
 		{
@@ -30,14 +26,14 @@ namespace L2ClassMethod
 		public virtual void Input()
 		{
 			Console.Write("Please input name: ");
-			name = Console.ReadLine();
+			this.name = Console.ReadLine();
 			Console.Write("Please input age: ");
-			age = int.Parse(Console.ReadLine());
+			this.age = int.Parse(Console.ReadLine());
 		}
 
 		public override string ToString()
 		{
-			return $"Name:\t{name}\nAge: \t{age}\n";
+			return $"Name: {name}, Age: {age}";
 		}
 	}
 }

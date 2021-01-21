@@ -1,6 +1,6 @@
 ﻿namespace L2ClassMethod
 {
-	class MathFranction
+	public class MathFranction
 	{
 		public static Fraction Add(Fraction a, Fraction b)
 		{
