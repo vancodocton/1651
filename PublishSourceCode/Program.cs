@@ -4,16 +4,16 @@ using System.Numerics;
 
 namespace Lab00ObjectsAndClasses
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			var app = new VehicleCatalogue();
+	// class Program
+	// {
+	// 	static void Main(string[] args)
+	// 	{
+	// 		var app = new VehicleCatalogue();
 
-			app.Run();
-			Console.ReadKey(true);
-		}
-	}
+	// 		app.Run();
+	// 		Console.ReadKey(true);
+	// 	}
+	// }
     class BigFactorial
 	{
 		public void Run()
