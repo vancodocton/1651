@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoConsole", "DemoConsole\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W3.1.InterfacesAndAbstraction.Lab", "W3.1.InterfacesAndAbstraction.Lab\W3.1.InterfacesAndAbstraction.Lab.csproj", "{F1E7169F-4BA7-4AE9-A2FD-9D3A4FF22B42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "W3.1.InterfacesAndAbstraction.Exercise", "W3.1.InterfacesAndAbstraction.Exercise\W3.1.InterfacesAndAbstraction.Exercise.csproj", "{77E1EF88-915B-4C86-A356-DA69DF7F5277}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F1E7169F-4BA7-4AE9-A2FD-9D3A4FF22B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1E7169F-4BA7-4AE9-A2FD-9D3A4FF22B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1E7169F-4BA7-4AE9-A2FD-9D3A4FF22B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E1EF88-915B-4C86-A356-DA69DF7F5277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E1EF88-915B-4C86-A356-DA69DF7F5277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E1EF88-915B-4C86-A356-DA69DF7F5277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E1EF88-915B-4C86-A356-DA69DF7F5277}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
