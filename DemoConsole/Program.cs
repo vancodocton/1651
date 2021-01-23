@@ -1,29 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DemoConsole
 {
 	class Program
 	{
-		static void Main(string[] args)
+		static void Main()
 		{
-			var students = new List<Student>();
+			var dog = new Dog();
 
-			students.Add(new Student("Truong", 19));
-			students.Add(new Student("Thien", 18));
-			students.Add(new Student("Lam", 20));
+			dog.Sound();
 
-			foreach (var student in students)
-				Console.WriteLine(student);
-			students.Sort(new Student.SortNameAscending());
-
-			foreach (var student in students)
-				Console.WriteLine(student);
+			dog.Fly();
 
 			Console.ReadKey(true);
+
 		}
 
 	}
