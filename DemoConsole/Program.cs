@@ -6,15 +6,15 @@ namespace DemoConsole
 	{
 		static void Main()
 		{
-			var dog = new Dog();
+			// declare objects
+			Person person1 = new Person("Nguyen Ky Duong Truong", 19);
+			Person person2 = new Person("Pham Duc Thien", 19);
 
-			dog.Sound();
-
-			dog.Fly();
+			// call object's method
+			person1.Greet();
+			person2.Greet();
 
 			Console.ReadKey(true);
-
 		}
-
 	}
 }
