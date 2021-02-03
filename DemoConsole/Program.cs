@@ -1,17 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace DemoConsole
 {
+	// Result of inheritance
 	class Program
 	{
 		static void Main()
 		{
-			List<int> list = new List<int>() { 5, 9, 6, 3, 4, 2, 1, 7 };
+			Animal animal = new Animal("Sky");
+			animal.Run();
+			animal.Hungry();
 
-			list.Sort();
+			Mouse mouse = new Mouse("Jerry");
+			mouse.Run();
+			mouse.Hungry();
+			mouse.Hide();
+
+			Cat cat = new Cat("Tom");
+			cat.Run();
+			cat.Hungry();
+			cat.Climb();
 
 			Console.ReadKey(true);
 		}
 	}
+	// Program Output:
+	// Animal is running
+	// Sky is hungry
+	// Mouse is running
+	// Jerry is hungry
+	// Jerry is hiding
+	// Cat is running
+	// Tom is hungry
+	// Tom is climbing
 }
+
+
+
+
+
