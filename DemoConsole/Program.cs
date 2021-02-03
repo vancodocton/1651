@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DemoConsole
 {
@@ -6,13 +7,9 @@ namespace DemoConsole
 	{
 		static void Main()
 		{
-			// declare objects
-			Person person1 = new Person("Nguyen Ky Duong Truong", 19);
-			Person person2 = new Person("Pham Duc Thien", 19);
+			List<int> list = new List<int>() { 5, 9, 6, 3, 4, 2, 1, 7 };
 
-			// call object's method
-			person1.Greet();
-			person2.Greet();
+			list.Sort();
 
 			Console.ReadKey(true);
 		}
