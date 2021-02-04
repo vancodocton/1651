@@ -2,37 +2,34 @@
 
 namespace DemoConsole
 {
-	// Result of inheritance
+	// Overloading in C#
+	class Caculation
+	{
+		public static int Sum(int a, int b)
+		{
+			return a + b;
+		}
+		public static int Sum(int a, int b, int c)
+		{
+			return a + b + c;
+		}
+	}
+	// Result of Overloading
 	class Program
 	{
 		static void Main()
 		{
-			Animal animal = new Animal("Sky");
-			animal.Run();
-			animal.Hungry();
-
-			Mouse mouse = new Mouse("Jerry");
-			mouse.Run();
-			mouse.Hungry();
-			mouse.Hide();
-
-			Cat cat = new Cat("Tom");
-			cat.Run();
-			cat.Hungry();
-			cat.Climb();
+			Console.WriteLine(Caculation.Sum(5, 6));
+			Console.WriteLine(Caculation.Sum(4, 2, 9));
 
 			Console.ReadKey(true);
 		}
+		// Output
+		/* 
+		 * 11
+		 * 15
+		 */
 	}
-	// Program Output:
-	// Animal is running
-	// Sky is hungry
-	// Mouse is running
-	// Jerry is hungry
-	// Jerry is hiding
-	// Cat is running
-	// Tom is hungry
-	// Tom is climbing
 }
 
 
