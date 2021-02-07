@@ -2,34 +2,28 @@
 
 namespace DemoConsole
 {
-	// Overloading in C#
-	class Caculation
-	{
-		public static int Sum(int a, int b)
-		{
-			return a + b;
-		}
-		public static int Sum(int a, int b, int c)
-		{
-			return a + b + c;
-		}
-	}
-	// Result of Overloading
 	class Program
 	{
 		static void Main()
 		{
-			Console.WriteLine(Caculation.Sum(5, 6));
-			Console.WriteLine(Caculation.Sum(4, 2, 9));
+
+			Dog dog = new Dog();
+			dog.Run();
+			dog.Eat();
+
+			Cat cat = new Cat("Tom");
+			cat.Eat();
+			cat.Run();
 
 			Console.ReadKey(true);
 		}
-		// Output
-		/* 
-		 * 11
-		 * 15
-		 */
 	}
+	/* Output
+	 * Dog is running fast
+	 * Dog is eating
+	 * Tom is eating
+	 * Tom is running fast
+	 */
 }
 
 
