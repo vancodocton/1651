@@ -30,18 +30,18 @@ namespace _1651.Assignment2
 						CreateOrder();
 						break;
 					case 2:
-						index = SelectOrder();
+						index = SelectOrderIndex();
 						DeleteOrder(index);
 						break;
 					case 3:
 						ShowOrderList();
 						break;
 					case 4:
-						index = SelectOrder();
+						index = SelectOrderIndex();
 						ShowOrder(index);
 						break;
 					case 5:
-						index = SelectOrder();
+						index = SelectOrderIndex();
 						PayOrder(index);
 						break;
 					case 0:
@@ -68,7 +68,7 @@ namespace _1651.Assignment2
 				switch (option)
 				{
 					case 1:
-						IMilkTea milkTea = ChooseBeverage();
+						IMilkTea milkTea = MixMilkTea();
 						order.Add(milkTea);
 						break;
 					case 2:
@@ -144,7 +144,7 @@ namespace _1651.Assignment2
 				Console.WriteLine("Order has been paid!");
 			}
 		}
-		private IMilkTea ChooseBeverage()
+		private IMilkTea MixMilkTea()
 		{
 			IMilkTea milkTea = new ThaiMilkTea();
 			Console.WriteLine("Beverage: " + milkTea.GetDescription());
@@ -181,11 +181,10 @@ namespace _1651.Assignment2
 			} while (option != 0);
 			return milkTea;
 		}
-		private int SelectOrder()
+		private int SelectOrderIndex()
 		{
 			Console.Write("Enter Order Id for action: ");
 			return int.Parse(Console.ReadLine());
 		}
-
 	}
 }
