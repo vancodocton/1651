@@ -33,7 +33,7 @@ namespace _1651.Assignment2
 			Console.WriteLine("Select 1 for Bubble");
 			Console.WriteLine("Select 2 for Cheese");
 			Console.WriteLine("Select 3 for Cream");
-			Console.WriteLine("Select 0 for finished or ignored");
+			Console.WriteLine("Select 0 for nothing");
 			Menu.BreakLine();
 			//Console.Write("Your option: ");
 		}
