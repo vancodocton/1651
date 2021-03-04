@@ -56,6 +56,7 @@ namespace _1651.Assignment2
 		private void CreateOrder()
 		{
 			Order order = new Order("unknown ID");
+			Console.WriteLine("Order index: " + ordersList.Count);
 			Console.WriteLine("Order ID: " + order.Id);
 
 			int option;
@@ -68,7 +69,7 @@ namespace _1651.Assignment2
 				switch (option)
 				{
 					case 1:
-						IMilkTea milkTea = MixMilkTea();
+						MilkTea milkTea = MixMilkTea();
 						order.Add(milkTea);
 						break;
 					case 2:
@@ -144,41 +145,47 @@ namespace _1651.Assignment2
 				Console.WriteLine("Order has been paid!");
 			}
 		}
-		private IMilkTea MixMilkTea()
+		private MilkTea MixMilkTea()
 		{
-			IMilkTea milkTea = new ThaiMilkTea();
+			MilkTea milkTea = new ThaiMilkTea();
 			Console.WriteLine("Beverage: " + milkTea.GetDescription());
 
 			Menu.PrintToppingOptionList();
-			int option;
+			string options;
 			do
 			{
-				Console.Write("Add toppings option: ");
-				option = int.Parse(Console.ReadLine());
+				Console.Write("Add toppings options: ");
+				options = Console.ReadLine();
 
-				switch (option)
+				foreach (char option in options)
+					switch (option)
+					{
+						case '1':
+							milkTea = new BubbleDecorator(milkTea);
+							break;
+						case '2':
+							milkTea = new CheeseDecorator(milkTea);
+							break;
+						case '3':
+							milkTea = new CreamDecorator(milkTea);
+							break;
+						case '0':
+							break;
+						default:
+							Console.WriteLine("Invalid option!");
+							break;
+					}
+				Console.WriteLine("Product: " + milkTea.GetDescription());
+				Console.WriteLine("Cost:    " + milkTea.GetCost());
+				Console.Write("Are you sure (Enter y for continue)? ");
+
+				if (Console.ReadLine() == "y") break;
+				else
 				{
-					case 1:
-						milkTea = new BubbleDecorator(milkTea);
-						break;
-					case 2:
-						milkTea = new CheeseDecorator(milkTea);
-						break;
-					case 3:
-						milkTea = new CreamDecorator(milkTea);
-						break;
-					case 0:
-						Console.WriteLine("Product: " + milkTea.GetDescription());
-						Console.WriteLine("Cost:    " + milkTea.GetCost());
-						Console.Write("Are you sure (Enter y for continue)? ");
-
-						if (Console.ReadLine() == "y") break;
-						else continue;
-					default:
-						Console.WriteLine("Invalid option!");
-						break;
+					milkTea = new ThaiMilkTea();
+					continue;
 				}
-			} while (option != 0);
+			} while (options != "");
 			return milkTea;
 		}
 		private int SelectOrderIndex()

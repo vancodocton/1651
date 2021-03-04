@@ -27,7 +27,6 @@
       <HashCode>AQAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MilkTeaDecorator.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="_1651.Assignment2.Order">
     <Position X="10" Y="2.25" Width="1.5" />
@@ -49,7 +48,6 @@
       <HashCode>AQAAAAAAAAAAAAAAIAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ThaiMilkTea.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="_1651.Assignment2.MilkTeaShop">
     <Position X="7.75" Y="0.5" Width="1.5" />
@@ -57,7 +55,7 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>CAAAAAABAAAQAQAAAAAAAAQACAgAAAAAAEAIgAAAAAA=</HashCode>
+      <HashCode>CAAAAAAABBAQAQAAAAAAAAQACAAAAAAAAEAIgAAAAAA=</HashCode>
       <FileName>MilkTeaShop.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -68,12 +66,5 @@
       <FileName>Menu.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="_1651.Assignment2.IMilkTea">
-    <Position X="5.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AQAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IMilkTea.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

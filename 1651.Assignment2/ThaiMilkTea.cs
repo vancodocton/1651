@@ -1,17 +1,17 @@
 ﻿namespace _1651.Assignment2
 {
-	class ThaiMilkTea : IMilkTea
+	class ThaiMilkTea : MilkTea
 	{
 		private double cost;
 		public ThaiMilkTea()
 		{
 			cost = 10000;
 		}
-		public double GetCost()
+		public override double GetCost()
 		{
 			return cost;
 		}
-		public string GetDescription()
+		public override string GetDescription()
 		{
 			return "Thai Milk Tea";
 		}

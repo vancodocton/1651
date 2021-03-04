@@ -46,7 +46,7 @@
     <Compile Include="BubbleDecorator.cs" />
     <Compile Include="CheeseDecorator.cs" />
     <Compile Include="CreamDecorator.cs" />
-    <Compile Include="IMilkTea.cs" />
+    <Compile Include="MilkTea.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MilkTeaDecorator.cs" />
     <Compile Include="Order.cs" />

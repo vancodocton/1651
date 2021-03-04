@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace _1651.Assignment2
 {
-	class Order : List<IMilkTea>
+	class Order : List<MilkTea>
 	{
 		private string id;
 		public string Id { get => id; }
@@ -11,7 +11,7 @@ namespace _1651.Assignment2
 		{
 			double totalCost = 0;
 
-			foreach (IMilkTea milkTea in this)
+			foreach (MilkTea milkTea in this)
 			{
 				totalCost += milkTea.GetCost();
 			}

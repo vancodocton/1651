@@ -11,11 +11,11 @@ namespace _1651.Assignment2
 		private double cost;
 		public double Cost { get => cost; private set => cost = value; }
 
-		public CreamDecorator(IMilkTea milkTea) : base(milkTea)
+		public CreamDecorator(MilkTea milkTea) : base(milkTea)
 		{
 			cost = 3000;
 		}
-		public CreamDecorator(IMilkTea milkTea, double cost) : base(milkTea)
+		public CreamDecorator(MilkTea milkTea, double cost) : base(milkTea)
 		{
 			this.cost = cost;
 		}

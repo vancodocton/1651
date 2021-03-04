@@ -1,14 +1,11 @@
 ﻿namespace _1651.Assignment2
 {
-	abstract class MilkTeaDecorator : IMilkTea
+	abstract class MilkTeaDecorator : MilkTea
 	{
-		protected IMilkTea milkTea;
-		public MilkTeaDecorator(IMilkTea milkTea)
+		protected MilkTea milkTea;
+		public MilkTeaDecorator(MilkTea milkTea)
 		{
 			this.milkTea = milkTea;
 		}
-
-		public abstract double GetCost();
-		public abstract string GetDescription();
 	}
 }

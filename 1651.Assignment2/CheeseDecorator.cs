@@ -5,11 +5,11 @@
 		private double cost;
 		public double Cost { get => cost; private set => cost = value; }
 
-		public CheeseDecorator(IMilkTea milkTea) : base(milkTea)
+		public CheeseDecorator(MilkTea milkTea) : base(milkTea)
 		{
 			cost = 3000;
 		}
-		public CheeseDecorator(IMilkTea milkTea, double cost) : base(milkTea)
+		public CheeseDecorator(MilkTea milkTea, double cost) : base(milkTea)
 		{
 			this.cost = cost;
 		}
