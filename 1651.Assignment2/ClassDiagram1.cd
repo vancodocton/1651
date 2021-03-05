@@ -31,7 +31,7 @@
   <Class Name="_1651.Assignment2.Order">
     <Position X="10" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAhAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Order.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -49,20 +49,23 @@
       <FileName>ThaiMilkTea.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_1651.Assignment2.MilkTeaShop">
+  <Class Name="_1651.Assignment2.ThaiMilkTeaShop">
     <Position X="7.75" Y="0.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>CAAAAAAABBAQAQAAAAAAAAQACAAAAAAAAEAIgAAAAAA=</HashCode>
-      <FileName>MilkTeaShop.cs</FileName>
+      <HashCode>CAAAAAABAhAQAAAAAAAAAAwACAAEAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>ThaiMilkTeaShop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_1651.Assignment2.Menu">
-    <Position X="7.75" Y="4.5" Width="1.5" />
+    <Position X="7.75" Y="4.5" Width="2.5" />
+    <Members>
+      <Method Name="Menu" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAgAAAAAAAQAAAAAAACAAAAAAAAAAAAAAQAAA=</HashCode>
+      <HashCode>AAAAAAAApCAQAAAAAAAAAEBAAAAiAAJABAgAAAIAAAQ=</HashCode>
       <FileName>Menu.cs</FileName>
     </TypeIdentifier>
   </Class>

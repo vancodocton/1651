@@ -2,17 +2,10 @@
 {
 	class CheeseDecorator : MilkTeaDecorator
 	{
-		private double cost;
-		public double Cost { get => cost; private set => cost = value; }
+		private readonly double cost = 3000;
+		public double Cost { get => cost; }
 
-		public CheeseDecorator(MilkTea milkTea) : base(milkTea)
-		{
-			cost = 3000;
-		}
-		public CheeseDecorator(MilkTea milkTea, double cost) : base(milkTea)
-		{
-			this.cost = cost;
-		}
+		public CheeseDecorator(MilkTea milkTea) : base(milkTea) { }
 
 		private string AddCheese() => ", add Cheese";
 		public override double GetCost() => milkTea.GetCost() + cost;

@@ -2,18 +2,9 @@
 {
 	class ThaiMilkTea : MilkTea
 	{
-		private double cost;
-		public ThaiMilkTea()
-		{
-			cost = 10000;
-		}
-		public override double GetCost()
-		{
-			return cost;
-		}
-		public override string GetDescription()
-		{
-			return "Thai Milk Tea";
-		}
+		private readonly double cost = 10000;
+
+		public override double GetCost() => cost;
+		public override string GetDescription() => "Thai Milk Tea";
 	}
 }
