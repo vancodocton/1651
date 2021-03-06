@@ -5,7 +5,7 @@ namespace _1651.Assignment2
 	{
 		public static void Main()
 		{
-			ThaiMilkTeaShop milkTeaShop = new ThaiMilkTeaShop();
+			MilkTeaShop milkTeaShop = new MilkTeaShop();
 			milkTeaShop.Operate();
 			Console.ReadKey();
 		}
